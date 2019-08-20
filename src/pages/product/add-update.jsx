@@ -203,7 +203,6 @@ class ProductAddUpdate extends Component {
             wrapperCol: { span: 6 },    // 右侧包裹文本框的宽度            
         }
         const { getFieldDecorator } = this.props.form;
-
         return (
             <Card title={title} >
                 <Form {...formItemLayout}>

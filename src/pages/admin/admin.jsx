@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Redirect,Route,Switch } from 'react-router-dom'
 import { Layout } from 'antd'
-
 import memoryUtils from '../../utils/memoryUtils'
 import LeftNav from '../../components/left-nav'
 import Header from '../../components/header'

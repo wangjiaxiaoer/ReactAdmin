@@ -1,5 +1,5 @@
 /**
- * 使用sore，兼容浏览器，语法更简洁
+ * 使用store，兼容浏览器，语法更简洁
  */
 import store from 'store'
 /**

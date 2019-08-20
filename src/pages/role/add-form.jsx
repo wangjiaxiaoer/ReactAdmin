@@ -35,5 +35,4 @@ class AddForm extends Component {
         )
     }
 }
-
 export default Form.create()(AddForm);

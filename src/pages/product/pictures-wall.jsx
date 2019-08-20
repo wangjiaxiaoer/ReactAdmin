@@ -40,11 +40,9 @@ class PicturesWall extends React.Component {
     }
     static propTypes = {
         imgs: PropTypes.array        
-    }
-    
+    }    
     //   隐藏Modal
     handleCancel = () => this.setState({ previewVisible: false });
-
     // 获取所有已上传图片文件名的数组
     getImgs = () => {
         return this.state.fileList.map(file => file.name)        
