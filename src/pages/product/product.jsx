@@ -3,6 +3,7 @@ import { Redirect, Switch, Route } from 'react-router-dom'
 import ProductHome from './home'
 import ProductAddUpdate from './add-update'
 import ProductDetail from './detail'
+
 /**
  * 商品管理路由
  */

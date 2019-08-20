@@ -57,7 +57,6 @@ export const reqDeleteUser = (userId) => ajax(BASE + '/manage/user/delete', { us
 // 添加用户
 export const reqAddUser = (user) => ajax(BASE + '/manage/user/add', user, 'POST')
 
-
 // 更新用户
 export const reqUpdateUser = (user) => ajax(BASE + '/manage/user/update', user, 'POST') 
 

@@ -33,6 +33,7 @@ export default class RichTextEditor extends Component {
             }
         }
     }   
+    
     uploadImageCallBack = (file)=> {
         return new Promise(
             (resolve, reject) => {
@@ -54,6 +55,7 @@ export default class RichTextEditor extends Component {
             }
         );
     }
+
     static propTypes = {
         detail: PropTypes.string    
     }

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Link,withRouter } from 'react-router-dom'
 import { Menu, Icon } from 'antd';
-
 import './index.less'
 import Logo from '../../assets/images/login_logo.png'
 import menuList from '../../config/menuConfig'

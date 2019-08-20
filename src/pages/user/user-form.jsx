@@ -12,6 +12,7 @@ const Option = Select.Option
  * 添加用户修改用户的组件
  */
 class UserForm extends PureComponent {
+    // 传参
     static propTypes = {
         setForm:PropTypes.func.isRequired,
         roles: PropTypes.array.isRequired,
@@ -37,6 +38,7 @@ class UserForm extends PureComponent {
                     }
                 </Item>
                 {
+                    // 如果是修改，则不显示密码
                     user._id ? null : (
                         <Item label="密码">
                             {

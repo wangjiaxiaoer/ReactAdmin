@@ -140,7 +140,6 @@ export default class Role extends Component{
         this.setState({
             showStatus: 0,
         })
-
     }
     // 获取角色列表函数
     getRoles = async () => {
@@ -158,8 +157,7 @@ export default class Role extends Component{
     // 为第一次render()准备表格数据
     componentWillMount(){
         this.initColumns();
-    }
-    
+    }    
     render() {
         const { roles, loading,role,showStatus } = this.state
         const title = (

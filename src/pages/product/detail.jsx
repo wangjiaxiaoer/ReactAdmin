@@ -36,6 +36,7 @@ export default class ProductDetail extends Component{
             // pCategoryName = result.data.name
             // const result1 = await reqCategory(categoryId)  
             // categoryName = result1.data.name
+            
 
             // promiseAll 方式
             const results = await Promise.all([reqCategory(pCategoryId), reqCategory(categoryId)])

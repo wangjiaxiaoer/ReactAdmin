@@ -12,7 +12,6 @@ import LinkButton from '../../components/link-button/link-button'
 import { PAGE_SIZE, BASE_IMG_URL } from '../../utils/constants'
 import { reqProducts, reqSearchProducts,reqProductUpdateStatus } from '../../api/index'
 
-
 const Option = Select.Option;
 
 /**

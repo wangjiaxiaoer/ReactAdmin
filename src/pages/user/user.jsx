@@ -118,6 +118,7 @@ export default class User extends Component{
         this.user = null
         this.setState({ showStatus: true })
     }
+    // 关闭弹窗
     handleCancel = () => {
         this.setState({ showStatus: false })
         // 清空上一次添加的数据

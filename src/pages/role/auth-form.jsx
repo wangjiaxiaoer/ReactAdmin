@@ -26,7 +26,6 @@ export default class AuthForm extends Component{
     }
     // 为父组件得到最新的tree数据
     getMenus = () => this.state.checkedKeys
-
     // 根据菜单配置文件 渲染树形结构
     getTreeNodes = (menuList) => { 
         return menuList.reduce((pre, item) => {

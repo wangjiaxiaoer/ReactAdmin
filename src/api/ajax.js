@@ -30,6 +30,5 @@ export default function ajax(url, data = {}, type = 'GET') {
         }).catch(err => {
             message.error('请求出错了：' + err.message)
         })
-    })
-    
+    })    
 }
