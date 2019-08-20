@@ -19,14 +19,6 @@ class Header extends Component{
         dayPictureUrl: '',    // 天气图片url
         weather: '',    // 天气的文本
     }
-    /**
-     * 第一次render()之后执行一次，
-     * 一般在此执行异步操作，发ajax请求/启动定时器
-     */ 
-    componentDidMount() {         
-        this.getTime();
-        this.getWeather()
-    }
     // 获取天气
     getWeather = async () => {
         const { dayPictureUrl, weather } = await reqWeather('上海');
@@ -61,7 +53,6 @@ class Header extends Component{
             this.setState({ currentTime });
         },1000)
     }
-
     // 退出
     logOut = ()=> {
         // 显示确认框
@@ -75,12 +66,19 @@ class Header extends Component{
             }
         });
     }
+    /**
+     * 第一次render()之后执行一次，
+     * 一般在此执行异步操作，发ajax请求/启动定时器
+     */ 
+    componentDidMount() {         
+        this.getTime();
+        this.getWeather()
+    }
     // 当前组件卸载之前调用
     componentWillUnmount() {
         // 清楚定时器
         clearInterval(this.timer)
-    }
-    
+    }    
     render() {
         const { currentTime, dayPictureUrl, weather } = this.state;
         const username = memoryUtils.user.username;
