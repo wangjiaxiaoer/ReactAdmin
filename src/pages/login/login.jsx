@@ -93,7 +93,7 @@ class Login extends Component {
                                     // 指定初始值
                                     initialValue: 'admin'
                                 })(
-                                    <Input prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Username" />
+                                    <Input prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="请输入用户名" />
                                 )
                             }
                         </Form.Item>
@@ -104,7 +104,7 @@ class Login extends Component {
                                         { validator: this.validatePwd }
                                     ]
                                 })(
-                                    <Input prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} type="password" laceholder="Password"
+                                    <Input prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} type="password" placeholder="请输入密码" 
                                     />
                                 )
                             }
